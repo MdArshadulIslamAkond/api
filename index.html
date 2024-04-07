@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms API</title>
+    <style>
+      .post {
+        background-color: bisque;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid burlywood;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <button onclick="addPost()">Add post</button>
+      <h1>Display posts</h1>
+      <section id="posts"></section>
+    </section>
+    <section>
+      <ul id="users"></ul>
+      <button onclick="loadUsers()">Load Data</button>
+      <button onclick="loadPosts()">Load Posts</button>
+    </section>
+    <section>
+      <p>Count numbers: <output id="result"></output></p>
+      <button onclick="startWorker()">Start Worker</button>
+      <button onclick="stopWorker()">Stop Worker</button>
+    </section>
+    <br /><br />
+    <section>
+      <button onclick="getData()">Fetch data</button>
+      <p id="display"></p>
+    </section>
+    <input id="id1" type="number" min="100" max="300" required />
+    <button onclick="validation()">OK</button>
+    <p id="demo"></p>
+    <script src="app.js"></script>
+  </body>
+</html>
